@@ -14,17 +14,7 @@
         }
         private void Button1_Click(object sender, EventArgs e)
         {
-            using (AddContactForm addContactForm = new AddContactForm())
-            {
-                if (addContactForm.ShowDialog() == DialogResult.OK)
-                {
-                    string name = addContactForm.ContactName;
-                    string phone = addContactForm.ContactPhone;
-                    string email = addContactForm.ContactEmail; // Lấy Email
-                    MessageBox.Show($"Liên hệ đã được thêm: {name} - {phone} - {email}");
-                    // Thêm logic để lưu hoặc hiển thị danh sách liên hệ
-                }
-            }
+            
         }
     }
 }
